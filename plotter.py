@@ -3,7 +3,7 @@ import os
 class Plotter():
     global pionts, s
     s = ()
-    pionts = [[(3, 2), "⁜"]]
+    pionts = []
     def setSize(self ,x, y):
         global s
         s = (y, x)
@@ -32,7 +32,6 @@ class Plotter():
         for x in range(s[0]):
             xi += 1
             if s[1] > 100:
-                print("100")
                 if xi < 10:
                     print(f"{xi}  |",end="")
                 elif xi < 100:
@@ -59,9 +58,8 @@ class Plotter():
                             if piont == False:
                                 print(z[1], end="")
                                 piont = True
+                
                 if xi == 1:
-                    print(yi, end="")
-                if xi == 2:
                     print("¬", end="")
                 elif piont == False:
                     print(" ", end="")
@@ -73,10 +71,11 @@ class Plotter():
 
 
 
+# same stuff as in the tutrial in the readme
+# except foo is renamed grid here so it looks better
 
 if __name__ == "__main__":
     grid = Plotter()
-    print(grid)
     grid.setSize(20, 10)
-    grid.addPiont((7,5))
+    grid.addPiont((5,10), marker='+')
     grid.Draw()
