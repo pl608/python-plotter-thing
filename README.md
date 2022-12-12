@@ -1,25 +1,24 @@
 # python-plotter-thing
-well what were you looking here for look in the description for all you want
+A python console ploter for placing 2d points on a canvas.
 
-
-
-oh btw here is how to use this thing
+# Instalation:
+Not inculded in pip.
+Download from github with git/Github Desktop/Download as zip.
+If downloaded as a compressed folder extract to the directory for python modules or directly to the location for you program.
+view [#Use](README.md#use)
 
 # USE:
-
-since this is module thingy isnt on pypi right now you have to put the plotter file in the same directory as your program
-
 ```python 
 import plotter
-foo = plotter.Plotter
-foo.setSize(10, 20)#10 wide 20 long
-foo.addPiont((5, 10), marker='+')#the marker is set to ⁜ by defualt, also just so it look like a real tutorial ill say: places a + right in the middle
+foo = plotter.Plotter()
+foo.setSize(10, 20)#10 wide 20 long (equivalent to a square in a console)
+foo.addPiont((5, 10), marker='+')# Places a + right in the middle of the canvas
 foo.Draw()
 ```
 
 # OUTPUT:
 ```
-piont set: (5, 10)
+point set: (5, 10)
 1 |¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬|
 2 |                    |
 3 |                    |
